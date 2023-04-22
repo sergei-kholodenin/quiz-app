@@ -131,6 +131,7 @@ submitBtn.addEventListener('click', () => {
         if (currentQuiz >= QuizData.length) {
             quiz.innerHTML = `
             <h2>Вы ответили верно на ${score} вопросов из ${QuizData.length}.</h2>
+            <button onClick="location.reload()">Начать заново</button>
             `;
         }
         loadQuiz();
