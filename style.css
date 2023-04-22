@@ -1,16 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
 *{
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    background-image:url('/pattern3.png');
+    background-repeat: repeat;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+}
+
+.quiz-container {
+    background-color: #ffdfda;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px hsla(0, 0%, 0%,.3);
+    width: 600px;
+    overflow: hidden;
+}
+
+.quiz-header {
+    padding: 4rem;
+}
+
+h2 {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #ff527d;
+    width: 100%;
+    border: none;
+    color: #fff;
+    padding: 1.3rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #cf4366;
+}
+
+button:active {
+    transform: translateY(5px);
 }
